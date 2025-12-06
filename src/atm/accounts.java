@@ -19,7 +19,7 @@ public class accounts {
         username.add("priya2000");
         username.add("trecy1998");
     }
-    public void accholder()
+    public void accpin()
     {
         pin.add(1954);
         pin.add(1999);

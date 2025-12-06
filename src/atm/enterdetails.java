@@ -14,11 +14,13 @@ public class enterdetails {
             System.out.println("Enter your UserName : ");
             String user = sc.nextLine();
             int index = 0;
+            boolean found = false;
             for(int a = 0 ; a < acc.username.size(); a++)
             {
                 String u = acc.username.get(a);
                 if(u.equals(user))
                 {
+                    found = true;
                     index = a;
                     System.out.println("Enter your Password : ");
                     int pass = sc.nextInt();
@@ -32,13 +34,11 @@ public class enterdetails {
                         System.out.println("Opps! Wrong Passward\n**Exiting For Security Reasons**\nYou may try again");
                         break;
                     }
-                }
-               /* else
-                {
-                    System.out.println("No such user found\n**Exiting For Security Reasons**\nYou may try again");
-                    break;
-                }*/
-                
+                }              
+            }
+            if(found == false)
+            {
+                System.out.println("No such user found\n**Exiting For Security Reasons**\nYou may try again");
             }
             
         }
