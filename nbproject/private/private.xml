@@ -5,6 +5,9 @@
         <group>
             <file>file:/home/koushik/NetBeansProjects/ATM/src/atm/ATM.java</file>
             <file>file:/home/koushik/NetBeansProjects/ATM/src/atm/accounts.java</file>
+            <file>file:/home/koushik/NetBeansProjects/ATM/src/atm/enterdetails.java</file>
+            <file>file:/home/koushik/NetBeansProjects/ATM/src/atm/diposit.java</file>
+            <file>file:/home/koushik/NetBeansProjects/ATM/src/atm/withdraw.java</file>
         </group>
     </open-files>
 </project-private>

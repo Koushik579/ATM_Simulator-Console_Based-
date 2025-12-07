@@ -8,8 +8,12 @@ public class ATM {
         acc.accNumber();
         acc.accpin();
         acc.userName();
+        acc.accBalance();
         enterdetails ed = new enterdetails(acc);
-        ed.details();
+        diposit dp = new diposit(acc,ed);
+        withdraw wt  = new withdraw();
+        menuControl mn = new menuControl(dp,ed,wt);
+        mn.control();
     }
     
 }

@@ -8,6 +8,7 @@ public class accounts {
     ArrayList<String> accholder = new ArrayList<>(); 
     ArrayList<Integer> pin = new ArrayList<>(); 
     ArrayList<Integer> accnumber = new ArrayList<>();
+    ArrayList<Integer> accbalance = new ArrayList<>();
     
     public void userName()
     {
@@ -48,5 +49,15 @@ public class accounts {
         accnumber.add(24101954);
         accnumber.add(24101954);
         accnumber.add(24101954);     
+    }
+    public void accBalance()
+    {
+        accbalance.add(487500);
+        accbalance.add(100000);
+        accbalance.add(900000);
+        accbalance.add(450000);
+        accbalance.add(1254890);
+        accbalance.add(985632);
+        accbalance.add(125487);
     }
 }

@@ -2,6 +2,7 @@ package atm;
 import java.util.*;
 public class enterdetails {
     public accounts acc;
+    int index = 0 ;
     public enterdetails(accounts acc)
     {
         this.acc = acc;
@@ -13,7 +14,6 @@ public class enterdetails {
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter your UserName : ");
             String user = sc.nextLine();
-            int index = 0;
             boolean found = false;
             for(int a = 0 ; a < acc.username.size(); a++)
             {
@@ -26,7 +26,8 @@ public class enterdetails {
                     int pass = sc.nextInt();
                     if(pass == acc.pin.get(index))
                     {
-                        System.out.println("Account Holder : "+acc.accholder.get(index)+"\nAccount Number : "+acc.accnumber.get(index));
+                        System.out.println("Account Holder : "+acc.accholder.get(index)+"\nAccount Number : "+acc.accnumber.get(index)+
+                                "\nAccount Balance : \u20B9"+acc.accbalance.get(index));
                         break;
                     }
                     else
