@@ -14,8 +14,15 @@ public class withdraw {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the amount of deposit : ");
         int am = sc.nextInt();
-        int currentBalance  = acc.accbalance.get(ed.index) - am;
-        acc.accbalance.set(ed.index, currentBalance);
-        System.out.println("\nAvailable Balance : " + currentBalance);
+        if(am > acc.accbalance.get(ed.index))
+        {
+            System.out.println("You don't have enough balance");
+        }
+        else
+        {
+            int currentBalance  = acc.accbalance.get(ed.index) - am;
+            acc.accbalance.set(ed.index, currentBalance);
+            System.out.println("\nAvailable Balance : " + currentBalance);
+        }
     }
 }

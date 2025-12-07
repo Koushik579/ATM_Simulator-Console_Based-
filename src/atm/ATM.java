@@ -11,7 +11,7 @@ public class ATM {
         acc.accBalance();
         enterdetails ed = new enterdetails(acc);
         diposit dp = new diposit(acc,ed);
-        withdraw wt  = new withdraw();
+        withdraw wt  = new withdraw(acc,ed);
         menuControl mn = new menuControl(dp,ed,wt);
         mn.control();
     }
